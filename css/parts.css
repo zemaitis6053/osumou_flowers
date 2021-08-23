@@ -439,7 +439,7 @@ ul.nav-text-wrapper{
 	content:"Menu";/*3つ目の要素のafterにMenu表示を指定*/
 	position: absolute;
 	top:5px;
-	left:-2px;
+	left:-4px;
 	color: #fff;
 	font-size: 1rem;
 	text-transform: uppercase;
