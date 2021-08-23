@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>お問い合わせ</title>
+<meta name="description"  content="「osumou flowers」のサイトです">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--=============Google Font ===============-->
+<link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+<link rel="icon" href="img/logo/favicon.png">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<!--機能編 9-3-1 ツールチップ-->
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/tippy.js@5.0.3/animations/shift-toward-subtle.css">
+<!--機能編 6-2-4　サムネイルをクリックすると、メイン画像が切り替わる1-->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+<!-- MyCSS -->
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/parts.css">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+<body>
+  <header>
+    <div class="openbtn fadeDownTrigger"><span></span><span></span><span></span></div>
+    <li><a href="index.html"><img class="site-logo-tablet" src="img/logo/logo_black_rect.png" alt="サイトロゴ"></a></li>
+    <nav id="g-nav" class="fadeUpTrigger">
+        <div id="g-nav-list">
+            <h1><a href="#"><img src="img/logo/logo_white_small.png" alt="osumou flowersサイトロゴ"></a></h1>
+            <ul class="nav-wrapper">
+                <li><a href="index.html"><img class="site-logo" src="img/logo/logo_black_rect.png" alt="サイトロゴ"></a></li>
+                <li class="has-child nav-text"><a href="index.html#slider">Today’s Lineup</a>
+                    <ul>
+                        <li><a href="#"><dl>
+                            <dt><img src="img/flower04.jpg" alt="「小結」の画像"></dt>
+                            <dd>「小結」 &yen;980-</dd>
+                        </dl></a></li>
+                        <li><a href="#"><dl>
+                            <dt><img src="img/flower05.jpg" alt="「大関」の画像"></dt>
+                            <dd>「大関」 &yen;3,980-</dd>
+                        </dl></a></li>
+                        <li><a href="#"><dl>
+                            <dt><img src="img/flower06.jpg" alt="「横綱」の画像"></dt>
+                            <dd>「横綱」 &yen;9,800-</dd>
+                        </dl></a></li>
+                    </ul>
+                </li>
+                <li class="nav-text"><a href="index.html#ranking">Gallery</a></li>
+                <li class="nav-text"><a href="index.html#about">About</a></li>
+                <li class="nav-text"><a href="index.html#access">Access</a></li>
+                <li>
+                    <dl class="contact-btn">
+                        <dt class="shop-info">
+                            〒153-0043 東京都目黒区東山x-x-x<br>営業時間 : 11:00-20:00 （月曜休）
+                        </dt>
+                        <dd>
+                            <a class="phone-icon" href="tel:03-xxxx-xxxx"><img class="contact-icon" src="img/phone_white.svg" alt="電話アイコン">03-xxxx-xxxx</a>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+<div class="circle-bg"></div>
+
+<div class="kv-contact fadeUpTrigger">
+    <!-- <img src="img/flower17.jpg" alt="Contactのヘッダー画像"> -->
+    <h1>お問い合わせ<br><span>Contact</span></h1>
+</div>
+
+<main>
+
+  <section class="contact-form" id="contact">
+    <h2 class="contact-pc">「osumou flowers」<span>へのお問い合わせ</span></h2>
+    <h2 class="contact-tablet">「osumou flowers」<span><br>へのお問い合わせ</span></h2>
+    <div class="contact-text">
+      <p>この度は、「osumou flowers」をご利用いただき、ありがとうございます。
+        お問い合わせの内容を下記のフォームにご記入いただき、送信してください。<br><br>
+        １営業日以内に返信いたしますので、返信がない場合は、迷惑フォルダに入ってないか、または、受信設定を確認後、ご連絡いただきますようお願いいたします。</p>
+    </div>
+      
+    <!-- <form method="post" action=""> -->
+    <form method="" action="">
+      <div class="form-group">
+        <label for="name" class="required">お名前</label>
+        <input type="text" id="name" placeholder="例）山田 太郎" required>
+      </div>
+      <div class="form-group">
+        <label for="tel" class="required">お電話番号</label>
+        <input type="tel" id="tel" placeholder="例）03-1234-5678" required>
+      </div>
+      <div class="form-group">
+        <label for="email" class="required">メールアドレス</label>
+        <input type="email" id="email" placeholder="例）sample@sample.com" required>
+      </div>
+      <div class="form-group">
+        <label for="email" class="required">メールアドレス（確認）</label>
+        <input type="email" id="email" placeholder="例）sample@sample.com" required>
+      </div>
+      <div class="form-group">
+        <label for="name" class="optional">会社名</label>
+        <input type="text" id="name" placeholder="例）サンプル株式会社">
+      </div>
+      <div class="form-group select-arrow">
+        <label for="job" class="optional">ご職業</label>
+        <select name="job" id="job">
+          <option value="">-- 選択してください --</option>
+          <option value="会社員">会社員</option>
+          <option value="自営業">自営業</option>
+          <option value="フリーランス">フリーランス</option>
+          <option value="学生">学生</option>
+          <option value="その他">その他</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message" class="required">お問い合わせ内容</label>
+        <textarea name="message" id="message" rows="" cols="" placeholder="例）自分で選んだ花の種類で組み合わせてもらいたい。など自由にご記入ください。" required></textarea>
+      </div>
+      <button type="submit" class="btn">送信する</button>
+        
+        
+        
+    </form>
+  </section><!-- contact-form -->
+</main>
+
+<hr class="footer-top">
+<footer id="footer" class="fadeUpTrigger">
+    <div class="footer-area">
+        <dl>
+          <dt>
+            <a href="index.html"><img class="site-logo" src="img/logo/logo_black_rect.png" alt="サイトロゴ"></a>
+        </dt>
+            <dd>〒153-0043<br>東京都目黒区東山x-x-x</dd>
+            <dd>営業時間 : 11:00-20:00 （月曜休）</dd>
+        </dl>
+        <ul>
+            <li><a href="#">花束・ブーケ</a></li>
+            <li><a href="#">アレンジメント</a></li>
+            <li><a href="#">プリザーブドフラワー</a></li>
+            <li><a href="#">季節限定</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">お支払い方法について</a></li>
+            <li><a href="#">利用規約</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">特定商取引法に基づく表示</a></li>
+        </ul>
+        <ul class="contact-btn">
+          <li>
+              <a class="phone-icon" href="tel:03-xxxx-xxxx"><img class="contact-icon" src="./img/phone_white.svg" alt="電話アイコン">03-xxxx-xxxx</a>
+          </li>
+          <li>
+              <a class="contact-mail" href="contact.html"><img class="contact-icon" src="./img/email_white.svg" alt="メールアイコン">メールでのお問い合わせ</a>
+          </li>
+      </ul>
+        </div>
+        <small>Copyright &copy; osumou flowers Allright Reverved</small>
+    </footer>
+    <div id="page-top"><a href="#header">Page<br>Top</a></div>
+
+
+<!--=============JS ===============--> 
+<!--jQuery-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--機能編 5-1-10 スクロールすると位置が固定して追従-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.1.0/stickyfill.min.js"></script>
+<!--機能編 6-2-4　サムネイルをクリックすると、メイン画像が切り替わる1-->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!--機能編 9-3-1 ツールチップ-->
+<script src="https://unpkg.com/popper.js@1"></script>
+<script src="https://unpkg.com/tippy.js@5"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+<!--自作のJS-->
+<script src="js/script.js"></script>
+</body>
+</html>
