@@ -998,3 +998,22 @@ ul.nav-text-wrapper{
 		left: 125%;/*画面の見えていない左から右へ移動する終了地点*/
 	}
 }
+
+/*　画像の拡大　*/
+
+.shine img{
+	transform: scale(1);
+	transition: .3s ease-in-out;/*移り変わる速さを変更したい場合はこの数値を変更*/
+}
+
+.shine a:hover img{/*hoverした時の変化*/
+	transform: scale(1.2);/*拡大の値を変更したい場合はこの数値を変更*/
+}
+
+/*　画像のマスク　*/
+
+.mask{
+    display: block;
+    line-height: 0;/*行の高さを0にする*/
+    overflow: hidden;/*拡大してはみ出る要素を隠す*/
+}
