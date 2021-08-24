@@ -1,11 +1,8 @@
 @charset "utf-8";
-/* レイアウトのためのCSS */
 
 html{
     font-size: 62.5%;
     overflow-x: hidden;
-    over-flow: hidden;/*IE11用*/
-    scroll-behavior: smooth;
 }
 
 body{
@@ -45,7 +42,7 @@ img{
     box-sizing: border-box
 }
 
-#ranking,
+#gallery,
 #about{
     width: 95%;
     margin: 0 auto;
@@ -59,18 +56,6 @@ section{
     margin: 140px auto 40px auto!important;
 }
 
-
-/*1020px以下の見え方*/
-
-/* @media screen and (max-width:1020px){
-    #main-area,
-    #sub-area{
-        width:90%;
-        padding: 0 30px;
-    }
-
-} */
-
 @media screen and (max-width:768px){
     #header h1{
         max-width:120px;
@@ -83,7 +68,6 @@ section{
     #access{
         margin: 100px auto 20px auto!important;
     }
-    
 }
 
 /* nav */
@@ -142,7 +126,6 @@ img.site-logo-tablet{
         display: block;
         width: 200px;
         margin: 20px auto 0 auto;
-
     }
 }
 
@@ -171,22 +154,19 @@ img.site-logo-tablet{
     img.site-logo-tablet{
         display: none;
     }
-
 }
 
 /* heading */
 
 #slider h2,
-#ranking h2,
+#gallery h2,
 #gallery h2,
 #newitems h2,
 #about h2,
 #access h2,
 #contact h2{
     text-align: center;
-    /* text-transform: uppercase; */
     font-size: 2.6rem;
-    /* letter-spacing: 0.1em; */
     color:#555;
     margin-bottom: 40px;
 }
@@ -204,7 +184,7 @@ img.site-logo-tablet{
 
 @media screen and (max-width:768px){
     #slider h2,
-    #ranking h2,
+    #gallery h2,
     #gallery h2,
     #newitems h2,
     #about h2,
@@ -215,197 +195,36 @@ img.site-logo-tablet{
     }
 }
 
-#ranking h2{
+#gallery h2{
     margin-bottom: 30px;
 }
 
 
 @media screen and (max-width:550px){
-.modaal-container h2,
-#ranking h2,
-#newitems h2,
-{
+    .modaal-container h2,
+    #gallery h2,
+    #newitems h2{
     font-size: 2rem;
-}
-
-}
-
-/* Today's Lineup */
-
-
-/* .modaal-container h2 span,
-#ranking h2 span,
-#newitems h2 span{
-    background: url(../img/bg_header_01.png) no-repeat left, url(../img/bg_header_02.png) no-repeat right;
-    background-size: 35px 35px;
-    padding: 10px 60px;
-    white-space: nowrap;
-} */
-
-/* bg flower */
-
-/* .flower1{
-    position: absolute;
-    background:url("../img/bg_flower.png") no-repeat;
-    background-size:contain;
-    width:140px;
-    height: 140px;
-    top:25%;
-    left:10%;
-    animation-delay: .3s;
-    z-index: 2;
-}
-
-.flower2{
-    position: absolute;
-    background:url("../img/bg_flower.png") no-repeat;
-    background-size:contain;
-    width:100px;
-    height: 100px;
-    top:32%;
-    right:10%;
-    animation-delay: .5s;
-    z-index: 2;
-} */
-
-/* @media screen and (max-width:1020px){
-  .flower1{
-    width:90px;
-    height:90px;
-      top:15%;
-}
-.flower2{
-    width:70px;
-    height:70px;
-
-}  
-    
-}
-
-@media screen and (max-width:768px){
-.flower1{
-    width:70px;
-    height: 70px;
-    top:9%;
-    left: 2%;
-}
-.flower2{
-    width:50px;
-    height: 50px;
-    top:18%;
-    right: 5%;
-}
-    
-}
-
-@media screen and (max-width:550px){
-
-.flower1{
-    top:14%;
-}   
-
-.flower2{
-    top:19%;
     }
-    
 }
 
-
-.flower3{
-    position: absolute;
-    background:url("../img/bg_flower01.png") no-repeat;
-    background-size:contain;
-    width:80px;
-    height: 80px;
-    top:5%;
-    right:0;
-    z-index: -1;
-}
-
-.flower4{
-    position: absolute;
-    background:url("../img/bg_flower02.png") no-repeat;
-    background-size:contain;
-    width:80px;
-    height:80px;
-    top:20%;
-    right:30%;
-    z-index: -1;
-}
-
-.flower5{
-    position: absolute;
-    background:url("../img/bg_flower03.png") no-repeat;
-    background-size:contain;
-    width:100px;
-    height:100px;
-    top:40%;
-    left:0;
-    z-index: -1;
-}
-
-.flower6{
-    position: absolute;
-    background:url("../img/bg_flower04.png") no-repeat;
-    background-size:contain;
-    width:80px;
-    height:80px;
-    top:60%;
-    left:30%;
-    z-index: -1;
-}
-
-.flower7{
-    position: absolute;
-    background:url("../img/bg_flower05.png") no-repeat;
-    background-size:contain;
-    width:100px;
-    height:100px;
-    top:80%;
-    left:0;
-    z-index: -1;
-}
-
-.flower8{
-    position: absolute;
-    background:url("../img/bg_flower.png") no-repeat;
-    background-size:contain;
-    width:85px;
-    height:85px;
-    top:100%;
-    left:10%;
-    z-index: -1;
-} */
-
-/* @media screen and (max-width:1020px){
-.flower3,
-.flower4,
-.flower5,
-.flower6,
-.flower7,
-.flower8{
-    display: none;
-    }
-} */
-
-/* ranking */
 /* Gallery */
 
 /*画像の横幅を100%にしてレスポンシブ化*/
-#ranking img{
+#gallery img{
 	width: 100%;
 	/* height: auto; */
 	vertical-align: bottom;/*画像の下にできる余白を削除*/
 }
 
-.ranking-list{
+.gallery-list{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     counter-reset: number;
 }
 
-.ranking-list li {
+.gallery-list li {
     position: relative;
     z-index: 1;
     width:30%;
@@ -413,18 +232,18 @@ img.site-logo-tablet{
     opacity: 0;
 }
 
-.ranking-list .ranking-cap{
+.gallery-list .gallery-cap{
     margin:10px 0 0 0;
     text-align: center;
     display: block;
 }
 
 @media screen and (max-width:550px){
-.ranking-list li {
+.gallery-list li {
     width: 46%;
 }
     
-.ranking-list li:last-child{
+.gallery-list li:last-child{
     display: none;
     }    
 }
@@ -437,41 +256,6 @@ img.site-logo-tablet{
 .gallery-btn a:hover{
     color: #9EA088;
 }
-
-/* .ranking-list li::before {
-    position: absolute;
-    left:-0.5em;
-    top:-0.5em;
-    z-index: 2;
-    counter-increment: number;
-    content: counter(number);
-    background: #457703;
-    display: inline-block;
-    width: 2.5em;
-    height:2.5em;
-    line-height:2.5em;
-    font-size:1.2rem;
-    text-align: center;
-    border-radius: 50%;
-color: #fff;
-} */
-
-/* @media screen and (max-width:768px){
-.ranking-list li::before {
-    width: 2em;
-    height:2em;
-    line-height:2em;
-font-size:1.1rem;
-    }
-    
-}
-
-.ranking-list li:nth-child(1)::before {
-    background: #997F42; }
-.ranking-list li:nth-child(2)::before {
-    background: #777; }
-.ranking-list li:nth-child(3)::before {
-    background: #B25938; } */
 
 /* About */
 .about-wrapper{
@@ -563,8 +347,6 @@ span.border-line{
         position: absolute;
         top: 5%;
         left: 15%;
-        /* transform: translate(-50%,-50%); */
-
     }
 }
 
@@ -595,7 +377,6 @@ span.border-line{
     }
 }
 
-
 /* Access */
 
 #access dl{
@@ -623,10 +404,6 @@ span.border-line{
 #newitems li{
     position: relative;
 }
-/* 
-#newitems .choice-btn li{
-    border-radius: 10px;    
-} */
 
 span.detail-price{
     position: absolute;
@@ -634,81 +411,7 @@ span.detail-price{
     bottom:10px;
     background:#fff;
     padding: 2px 10px;
-    /* border-radius: 10px; */
 }
-
-/* #newitems .choice-btn li .detail-cap{
-    border-radius:10px;
-} */
-
-/* news */
-
-/* #news{
-    background:#fff;
-    border-radius: 10px;
-    padding: 20px 0;
-    margin: 0 0 50px 0;
-} */
-
-/* #news h2{
-    padding:0 20px 0 40px;
-    color: #457703;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    letter-spacing: 0.1em;
-} */
-
-/* @media screen and (max-width:550px){
-#news h2{
-    font-size: 1.4rem;
-    text-align: center;
-    padding: 0;
-}
-    
-} */
-
-/* sub-area */
-/* 
-.sub-btn-list{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0 30px 0;
-}
-
-.sub-btn-list li{
-    width:48%;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: 0.8rem;
-}
-
-.sub-btn-list li img{
-    width:30px;
-}
-
-.sub-btn-list li a{
-    color:#fff;  
-    display: block;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.inner-cap{
-    padding: 10px;
-}
-
-.tab-area .area li a{
-    display: block;
-    border-bottom:1px solid #ccc;
-    padding: 10px 10px 10px 20px;
-    transition: all .3s;
-}
-
-.tab-area .area li a:hover{
-    background:#efefef;   
-} */
-
 
 /* footer */
 
@@ -725,7 +428,6 @@ hr.footer-top{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* justify-content: space-evenly; */
     color: #555;
     font-size: 1.4rem;
     max-width: 1500px;
@@ -789,7 +491,6 @@ small{
 }
 
 /* お問い合わせボタン */
-
 
 .contact-btn li,
 .contact-btn dd{

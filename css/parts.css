@@ -34,7 +34,6 @@
     width: 25px;
 }
 
-
 /*==================================================
 /*機能編 5-1-3 ドロップダウンメニュー（写真付 上ナビ）*/
 /*===================================*/
@@ -80,7 +79,6 @@ ul.nav-text-wrapper{
 	text-decoration: none;
 	color: #555;
     padding: 10px;
-	/* transition:all .3s; */
 }
 
 #g-nav ul li a:hover,
@@ -103,12 +101,6 @@ ul.nav-text-wrapper{
     border-right:2px solid #555;
     transform: rotate(135deg);
 }
-/* @media screen and (max-width:768px){
-    #g-nav ul li.has-child > a::before{
-        border-top: #fff;
-        border-right: #fff;
-    }
-} */
 
 /*==2階層目以降の画像設定*/
 
@@ -197,13 +189,6 @@ ul.nav-text-wrapper{
     display: none;
 }
 
-/* li.nav-bottom{
-    position: absolute;
-    top:80%;
-    display: table-cell;
-    vertical-align: bottom;
-} */
-
 /*==768px以下の形状*/
 @media screen and (max-width:768px){
     #g-nav ul li a{
@@ -216,7 +201,6 @@ ul.nav-text-wrapper{
     }
 
     .shop-info{
-        /* display: block; */
         color:#fff;
         width: 280px;
         margin: 30px auto 20px auto;
@@ -305,85 +289,82 @@ ul.nav-text-wrapper{
     #g-nav li.has-child:hover > ul{
         left: 0;
     }
-
 }
 
 /*==================================================
 /*機能編 5-1-22 クリックしたら円形背景が拡大（左上から）*/
 /*===================================*/
 @media screen and (max-width:768px) {
-#g-nav{
+    #g-nav{
         display: none;
-}
+    }
 
-.shop-info{
-    display: block;
-}
+    .shop-info{
+        display: block;
+    }
     
-/*アクティブになったエリア*/
-#g-nav.panelactive{
-    display: block;
-    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
-    position:fixed;
-    z-index: 99;
-	top: 0;
-	width:100%;
-    height: 100vh;
-}
+    /*アクティブになったエリア*/
+    #g-nav.panelactive{
+        display: block;
+        /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+        position:fixed;
+        z-index: 99;
+        top: 0;
+        width:100%;
+        height: 100vh;
+    }
 
-/*丸の拡大*/
-.circle-bg{
-    position: fixed;
-	z-index:3;
-    /*丸の形*/
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: #9EA088;
-    /*丸のスタート位置と形状*/
-	transform: scale(0);/*scaleをはじめは0に*/
-	left:-18px;
-    top:-18px;
-    transition: all .6s;/*0.6秒かけてアニメーション*/
-}
+    /*丸の拡大*/
+    .circle-bg{
+        position: fixed;
+        z-index:3;
+        /*丸の形*/
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: #9EA088;
+        /*丸のスタート位置と形状*/
+        transform: scale(0);/*scaleをはじめは0に*/
+        left:-18px;
+        top:-18px;
+        transition: all .6s;/*0.6秒かけてアニメーション*/
+    }
 
-.circle-bg.circleactive{
-	transform: scale(50);/*クラスが付与されたらscaleを拡大*/
-}
+    .circle-bg.circleactive{
+        transform: scale(50);/*クラスが付与されたらscaleを拡大*/
+    }
 
-/*ナビゲーションの縦スクロール*/
-#g-nav-list{
-    opacity: 0;/*はじめは表示なし*/
-    /*ナビの数が増えた場合縦スクロール*/
-    position: fixed;
-    z-index: 99; 
-    width: 100%;
-    height: 100vh;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-}
+    /*ナビゲーションの縦スクロール*/
+    #g-nav-list{
+        opacity: 0;/*はじめは表示なし*/
+        /*ナビの数が増えた場合縦スクロール*/
+        position: fixed;
+        z-index: 99; 
+        width: 100%;
+        height: 100vh;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
 
-#g-nav.panelactive #g-nav-list{
-    opacity: 1; /*クラスが付与されたら出現*/
-}
+    #g-nav.panelactive #g-nav-list{
+        opacity: 1; /*クラスが付与されたら出現*/
+    }
 
-/*ナビゲーション*/
-#g-nav ul {
-	opacity: 0;/*はじめは透過0*/
-    width: 90%;
-    margin:0 auto 60px auto;
-}
-    
-#g-nav ul ul{
-    margin: 0;
-}
+    /*ナビゲーション*/
+    #g-nav ul {
+        opacity: 0;/*はじめは透過0*/
+        width: 90%;
+        margin:0 auto 60px auto;
+    }
+        
+    #g-nav ul ul{
+        margin: 0;
+    }
 
-
-/*背景が出現後にナビゲーションを表示*/
-#g-nav.panelactive ul {
-    opacity:1;
-}
-
+    /*背景が出現後にナビゲーションを表示*/
+    #g-nav.panelactive ul {
+        opacity:1;
+    }
 }
 
 /*==================================================
@@ -422,7 +403,6 @@ ul.nav-text-wrapper{
     width: 45%;
 }
 
-
 .openbtn span:nth-of-type(1) {
 	top:13px;	
 }
@@ -439,7 +419,7 @@ ul.nav-text-wrapper{
 	content:"Menu";/*3つ目の要素のafterにMenu表示を指定*/
 	position: absolute;
 	top:5px;
-	left:-4px;
+	left:-6px;
 	color: #fff;
 	font-size: 1rem;
 	text-transform: uppercase;
@@ -469,7 +449,7 @@ ul.nav-text-wrapper{
 	content:"Close";/*3つ目の要素のafterにClose表示を指定*/
     transform: translateY(0) rotate(-45deg);
 	top:5px;
-	left:4px;
+	left:2px;
 }
 }
 
@@ -679,13 +659,14 @@ ul.nav-text-wrapper{
     padding: 20px;
 }
 
-/
 
 /*==================================================
 機能編 6-1-7 複数画像を中央に注目させて見せる
 ===================================*/
 
 .slider{
+    width: 94%;
+    margin: 0 auto;
     position: relative;
     z-index: 1;
 }
@@ -735,7 +716,6 @@ ul.nav-text-wrapper{
 	opacity: 1;/*透過なし*/
 }
 
-
 /*矢印の設定*/
 
 /*戻る、次へ矢印の位置*/
@@ -752,12 +732,13 @@ ul.nav-text-wrapper{
 }
 
 .slick-prev {/*戻る矢印の位置と形状*/
-    left: -1.5%;
+    /* left: -1.5%; */
+    left: -5%;
     transform: rotate(-135deg);
 }
 
 .slick-next {/*次へ矢印の位置と形状*/
-    right: -1.5%;
+    right: -5%;
     transform: rotate(45deg);
 }
 
@@ -787,11 +768,9 @@ ul.nav-text-wrapper{
     background:#B25938;/*ドットボタンの現在地表示の色*/
 }
 
-
 /*==================================================
 機能編 6-2-4　サムネイルをクリックすると、メイン画像が切り替わる1
 ===================================*/
-
 
 /*画像の横幅を100%にしてレスポンシブ化*/
 #newitems img{
@@ -814,22 +793,22 @@ ul.nav-text-wrapper{
 .slick-next {
     position: absolute;/*絶対配置にする*/
 	z-index: 3;
-    top: 42%;
+    top: 35%;
     cursor: pointer;/*マウスカーソルを指マークに*/
     outline: none;/*クリックをしたら出てくる枠線を消す*/
-    border-top: 3px solid #fff;/*矢印の色*/
-    border-right: 3px solid #fff;/*矢印の色*/
-    height: 25px;
-    width: 25px;
+    border-top: 1px solid #555;/*矢印の色*/
+    border-right: 1px solid #555;/*矢印の色*/
+    height: 15px;
+    width: 15px;
 }
 
 .slick-prev {/*戻る矢印の位置と形状*/
-    left:2.5%;
+    left:-2%;
     transform: rotate(-135deg);
 }
 
 .slick-next {/*次へ矢印の位置と形状*/
-    right:2.5%;
+    right:-2%;
     transform: rotate(45deg);
 }
 
@@ -857,67 +836,64 @@ ul.nav-text-wrapper{
     opacity: 1;
 }
 
-
-
-
 /*==================================================
 印象編 4 最低限おぼえておきたい動き
 ===================================*/
 /* 4-1 ふわっ（下から） */
 
 .fadeUp{
-animation-name: fadeUpAnime;
-animation-duration:0.5s;
-animation-fill-mode:forwards;
-opacity:0;
+    animation-name: fadeUpAnime;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
 }
 
 @keyframes fadeUpAnime{
-  from {
-    opacity: 0;
-	transform: translateY(100px);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
 
-  to {
-    opacity: 1;
-	transform: translateY(0);
-  }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* 4-1 ふわっ（上から）*/
 
 .fadeDown{
-animation-name: fadeDownAnime;
-animation-duration:0.5s;
-animation-fill-mode:forwards;
-opacity:0;
+    animation-name: fadeDownAnime;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
 }
 
 @keyframes fadeDownAnime{
-  from {
-    opacity: 0;
-	transform: translateY(-100px);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
 
-  to {
-    opacity: 1;
-	transform: translateY(0);
-  }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
 /* スマホ表示用。flipRightTriggerを指定している親要素に指定しないとうまく動かない*/
-#ranking{
+#galery{
     transform:  translate3d(0, 0, 0);
 }
 
 /* 4-2 パタッ（右へ） */
 .flipRight{
-animation-name: flipRightAnime;
-animation-duration:0.5s;
-animation-fill-mode:forwards;
-perspective-origin: right center;
-opacity:0;
+    animation-name: flipRightAnime;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    perspective-origin: right center;
+    opacity:0;
 }
 
 @keyframes flipRightAnime{
@@ -939,23 +915,6 @@ opacity:0;
 .fadeDownTrigger{
     opacity: 0;
 }
-
-/* 4-3 くるっ（ Y 軸（横へ）） */
-/* .rotateY{
-	animation-name: rotateYAnime;
-	animation-duration:1s;
-	animation-fill-mode:forwards;
-}
-
-@keyframes rotateYAnime{
-	from{
-		transform: rotateY(0);
-		}
-	to{
-		transform: rotateY(-360deg);
-		}
-} */
-
 
 /*==================================================
 /*7 画像リンクの動き*/
@@ -1015,6 +974,7 @@ opacity:0;
 .shine span.mask{
 	position: relative;/*キラッの基点となる位置を定義*/
     display: block;
+    line-height: 0;
     overflow: hidden;
 }
 

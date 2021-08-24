@@ -87,67 +87,6 @@ $('#page-top').click(function () {
 });
 
 /*===========================================================*/
-/*機能編 9-2-1 任意の場所をクリックすると隠れていた内容が開く*/
-/*===========================================================*/
-
-//アコーディオンをクリックした時の動作
-// $('.title').on('click', function() {//タイトル要素をクリックしたら
-// 	var findElm = $(this).next(".box");//直後のアコーディオンを行うエリアを取得し
-// 	$(findElm).slideToggle();//アコーディオンの上下動作 
-// 	if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
-// 		$(this).removeClass('close');//クラス名を除去し
-// 	}else{//それ以外は
-// 		$(this).addClass('close');//クラス名closeを付与
-// 	}
-// });
-
-
-/*===========================================================*/
-/*機能編 5-4-1 タブメニュー*/
-/*===========================================================*/
-
-//任意のタブにURLからリンクするための設定
-// function GethashID (hashIDName){
-// 	if(hashIDName){
-// 		//タブ設定
-// 		$('.tab li').find('a').each(function() { //タブ内のaタグ全てを取得
-// 			var idName = $(this).attr('href'); //タブ内のaタグのリンク名（例）#lunchの値を取得	
-// 			if(idName == hashIDName){ //リンク元の指定されたURLのハッシュタグ（例）http://example.com/#lunch←この#の値とタブ内のリンク名（例）#lunchが同じかをチェック
-// 				var parentElm = $(this).parent(); //タブ内のaタグの親要素（li）を取得
-// 				$('.tab li').removeClass("active"); //タブ内のliについているactiveクラスを取り除き
-// 				$(parentElm).addClass("active"); //リンク元の指定されたURLのハッシュタグとタブ内のリンク名が同じであれば、liにactiveクラスを追加
-// 				//表示させるエリア設定
-// 				$(".area").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
-// 				$(hashIDName).addClass("is-active"); //表示させたいエリアのタブリンク名をクリックしたら、表示エリアにis-activeクラスを追加	
-// 			}
-// 		});
-// 	}
-// }
-
-// //タブをクリックしたら
-// $('.tab a').on('click', function() {
-// 	var idName = $(this).attr('href'); //タブ内のリンク名を取得	
-// 	GethashID (idName);//設定したタブの読み込みと
-// 	return false;//aタグを無効にする
-// });
-
-
-// // 上記の動きをページが読み込まれたらすぐに動かす
-// $(window).on('load', function () {
-//     $('.tab li:first-of-type').addClass("active"); //最初のliにactiveクラスを追加
-//     $('.area:first-of-type').addClass("is-active"); //最初の.areaにis-activeクラスを追加
-// 	var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
-// 	GethashID (hashName);//設定したタブの読み込み
-// });
-
-// //タブをクリックしたら
-// $('.tab a').on('click', function() {
-// 	var idName = $(this).attr('href'); //タブ内のリンク名を取得	
-// 	GethashID (idName);//設定したタブの読み込みと
-// 	return false;//aタグを無効にする
-// });
-
-/*===========================================================*/
 /*機能編 9-3-1ツールチップ*/
 /*===========================================================*/
 
@@ -176,58 +115,6 @@ $('.slider').slick({
 		dots: true,//下部ドットナビゲーションの表示
 	});
 
-/*===========================================================*/
-/*機能編 6-2-4	サムネイルをクリックすると、メイン画像が切り替わる1*/
-/*===========================================================*/
-
-//上部画像の設定
-// $('.gallery').slick({
-// 	infinite: true, //スライドをループさせるかどうか。初期値はtrue。
-// 	fade: true, //フェードの有効化
-// 	arrows: true,//左右の矢印あり
-// 	prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
-// 	nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
-// });
-
-// //選択画像の設定
-// $('.choice-btn').slick({
-// 	infinite: true, //スライドをループさせるかどうか。初期値はtrue。
-// 	slidesToShow: 4, //表示させるスライドの数
-// 	focusOnSelect: true, //フォーカスの有効化
-// 	asNavFor: '.gallery', //連動させるスライドショーのクラス名
-// });
-  
-// //下の選択画像をスライドさせずに連動して変更させる設定。
-// $('.gallery').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-// 	var index = nextSlide; //次のスライド番号
-// 	//サムネイルのslick-currentを削除し次のスライド要素にslick-currentを追加
-// 	$(".choice-btn .slick-slide").removeClass("slick-current").eq(index).addClass("slick-current");
-// });
-  
-/*==================================================
-/*機能編 9-6-1 ページを開くと、背景が暗くなりテキストを表示*/
-/*===================================*/
-//初回のみモーダルをすぐ出す判定。flagがモーダル表示のstart_open後に代入される
-	// var access = $.cookie('access')
-	// if(!access){
-	// 	flag = true;
-	// 	$.cookie('access', false);
-	// }else{
-	// 	flag = false	
-	// }
-	
-	// //モーダル表示
-	// $(".modal-open").modaal({
-	// start_open:flag, // ページロード時に表示するか
-	// overlay_close:true,//モーダル背景クリック時に閉じるか
-  //   background: '#000', // 背景色
-	// before_open:function(){// モーダルが開く前に行う動作
-	// 	$('html').css('overflow-y','hidden');/*縦スクロールバーを出さない*/
-	// },
-	// after_close:function(){// モーダルが閉じた後に行う動作
-	// 	$('html').css('overflow-y','scroll');/*縦スクロールバーを出す*/
-	// }
-	// });
 
 /*===========================================================*/
 /*印象編 4-12 順番に現れる（CSS x jQuery）*/
@@ -330,10 +217,12 @@ $(window).on('load', function () {
 		var Box =$(element).children('.box');	//openクラスの子要素boxクラスを取得
 		$(Box).slideDown(500);					//アコーディオンを開く
 	});
+});
 
-    
-  //   /*機能編 5-4-1 タブメニューの読み込み*/
-  //   var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
-	// GethashID (hashName);//設定したタブの読み込み
-    
+// ページ内リンク
+$('#g-nav a[href*="#"]').click(function () {
+	var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
+	var pos = $(elmHash).offset().top;	//idの上部の距離を取得
+	$('body,html').animate({scrollTop: pos}, 500); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
+	return false;
 });

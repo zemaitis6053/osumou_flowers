@@ -81,8 +81,6 @@ select:hover{
   border-left: 8px solid transparent;
 }
 
-
-
 .required::before,
 .optional::before{
   content: "必須";
