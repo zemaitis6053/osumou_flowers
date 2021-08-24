@@ -47,8 +47,6 @@ ul.nav-text-wrapper{
 	position: relative;
     display: flex;
     justify-content: center;
-    /* justify-content: space-evenly; */
-    /* margin: 20px 100px; */
 }
 
 .shop-info{
@@ -119,7 +117,6 @@ ul.nav-text-wrapper{
 #g-nav ul li.has-child dt{
 	overflow: hidden;
 	height: 12vh;
-    /* border-radius:10px 10px 0 0; */
 }
 
 #g-nav ul li.has-child dd{
@@ -127,7 +124,6 @@ ul.nav-text-wrapper{
     opacity: .8;
     padding: 10px 0;
     text-align: center;
-    /* border-radius: 0 0 10px 10px; */
 }
 
 @media screen and (max-width:1200px){
@@ -147,14 +143,11 @@ ul.nav-text-wrapper{
     /*子要素を横並びに*/    
 	display: flex;
 	justify-content: space-evenly;
-	/* justify-content: center; */
 	flex-wrap: wrap;
     /*形状を指定*/
-	/* background:#ADA296; */
 	background:rgba(173,162,150, 0.9);
 	width:80%;
     margin: 0 auto;
-    /* border-radius: 10px; */
     /*はじめは非表示*/
 	visibility: hidden;
 	opacity: 0;
@@ -170,7 +163,6 @@ ul.nav-text-wrapper{
     margin: 0 auto;
     left: 10%;
 }
-
 
 /*各ナビゲーション横幅*/
 #g-nav li.has-child ul li{
@@ -732,7 +724,6 @@ ul.nav-text-wrapper{
 }
 
 .slick-prev {/*戻る矢印の位置と形状*/
-    /* left: -1.5%; */
     left: -5%;
     transform: rotate(-135deg);
 }
