@@ -142,7 +142,7 @@ ul.nav-text-wrapper{
     /*絶対配置で位置を指定*/
     position: absolute;
 	left:5%;
-	top:58px;
+	top:80px;
 	z-index: 4;
     /*子要素を横並びに*/    
 	display: flex;
