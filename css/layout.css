@@ -70,6 +70,15 @@ section{
     }
 }
 
+header{
+    position: fixed;
+    z-index: 900;
+    background-color: #fafafa;
+    opacity: .97;
+    width: 100%; 
+    margin: 0 auto;
+}
+
 /* nav */
 
 #g-nav{
@@ -98,8 +107,6 @@ img.site-logo{
     padding: 10px 40px 10px 10px;
     display: block;
     transition-duration: .3s;
-    /* position: relative;
-    top: 70%; */
 }
 
 
