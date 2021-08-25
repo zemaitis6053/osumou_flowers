@@ -745,14 +745,15 @@ ul.nav-text-wrapper{
 	margin:0 5px;
 }
 
+/*ドットボタン*/
 .slick-dots button {
     color: transparent;
     outline: none;
-    width:8px;/*ドットボタンのサイズ*/
-    height:8px;/*ドットボタンのサイズ*/
+    width:8px;
+    height:8px;
     display:block;
     border-radius:50%;
-    background:#9EA088;/*ドットボタンの色*/
+    background:#9EA088;
 }
 
 .slick-dots .slick-active button{
@@ -802,6 +803,34 @@ ul.nav-text-wrapper{
     right:-2%;
     transform: rotate(45deg);
 }
+
+@media screen and (max-width:768px){
+    .slick-prev,
+    .slick-next{
+        top: 34%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .slick-prev,
+    .slick-next{
+        top: 33%;
+    }
+}
+
+@media screen and (max-width:400px){
+    .slick-prev,
+    .slick-next{
+        top: 26%;
+    }
+}
+
+@media screen and (max-width:350px){
+    .choice-btn li{
+        width:48%!important;
+        margin:0 1% 10px 1%;
+    }
+    }
 
 /*選択するサムネイル画像の設定*/
 

@@ -23,15 +23,15 @@ function mediaQueriesWin(){
 /*機能編 5-1-10スクロールすると位置が固定して追従*/
 /*===========================================================*/
 
-$(window).on('load resize', function() {
-	var windowWidth = window.innerWidth;
-	var elements = $('.sub-fix-block');//position: sticky;を指定している要素
-	if (windowWidth >= 1020) {/*1020px以上にIE用のJSをきかせる*/
-		Stickyfill.add(elements);
-	}else{
-		Stickyfill.remove(elements);
-	} 
-});
+// $(window).on('load resize', function() {
+// 	var windowWidth = window.innerWidth;
+// 	var elements = $('.sub-fix-block');//position: sticky;を指定している要素
+// 	if (windowWidth >= 1020) {/*1020px以上にIE用のJSをきかせる*/
+// 		Stickyfill.add(elements);
+// 	}else{
+// 		Stickyfill.remove(elements);
+// 	} 
+// });
 
 /*===========================================================*/
 /*機能編 5-1-22 クリックしたら円形背景が拡大（左上から）*/
