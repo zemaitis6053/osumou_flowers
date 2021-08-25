@@ -226,3 +226,18 @@ $('#g-nav a[href*="#"]').click(function () {
 	$('body,html').animate({scrollTop: pos}, 500); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
 	return false;
 });
+
+// ページ外リンク
+$(window).on('load', function() {
+	var headerHight = 100; //ヘッダの高さ
+	if(document.URL.match("#")) {
+	var str = location.href ;
+	var cut_str = "#";
+	var index = str.indexOf(cut_str);
+	var href = str.slice(index);
+	var target = href;
+	var position = $(target).offset().top - headerHight;
+	$("html, body").animate({scrollTop:position}, 500,"swing");
+	return false;
+}
+});
