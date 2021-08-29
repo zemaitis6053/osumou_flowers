@@ -167,7 +167,6 @@ img.site-logo-tablet{
 
 #slider h2,
 #gallery h2,
-#gallery h2,
 #newitems h2,
 #about h2,
 #access h2,
@@ -191,7 +190,6 @@ img.site-logo-tablet{
 
 @media screen and (max-width:768px){
     #slider h2,
-    #gallery h2,
     #gallery h2,
     #newitems h2,
     #about h2,
@@ -220,7 +218,6 @@ img.site-logo-tablet{
 /*画像の横幅を100%にしてレスポンシブ化*/
 #gallery img{
 	width: 100%;
-	/* height: auto; */
 	vertical-align: bottom;/*画像の下にできる余白を削除*/
 }
 

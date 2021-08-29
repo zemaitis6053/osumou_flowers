@@ -821,7 +821,7 @@ ul.nav-text-wrapper{
 @media screen and (max-width:400px){
     .slick-prev,
     .slick-next{
-        top: 26%;
+        top: 25%;
     }
 }
 
@@ -994,7 +994,6 @@ ul.nav-text-wrapper{
 .shine span.mask{
 	position: relative;/*キラッの基点となる位置を定義*/
     display: block;
-    line-height: 0;
     overflow: hidden;
 }
 
