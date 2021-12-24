@@ -3,18 +3,15 @@
 <head>
 <meta charset="utf-8">
 <title>お問い合わせ | osumou flowers</title>
-<meta name="description"  content="「osumou flowers」のサイトです">
+<meta name="description"  content="株式会社 ドットインストールによる仮案件企画「osumou flowers」のお問い合わせページです。">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <!--=============Google Font ===============-->
 <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
 <link rel="icon" href="img/logo/favicon.png">
-<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
-<!--機能編 9-3-1 ツールチップ-->
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/tippy.js@5.0.3/animations/shift-toward-subtle.css">
-<!--機能編 6-2-4　サムネイルをクリックすると、メイン画像が切り替わる1-->
+<!--==============レイアウトを制御する独自のCSS===============-->
+<!--Slick_画像をクリックで、メイン画像が切り替わる-->
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-
-<!-- Local CSS -->
+<!-- CSS -->
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/parts.css">
 <link rel="stylesheet" type="text/css" href="css/layout.css">
@@ -123,53 +120,52 @@
 <!-- footer -->
 <hr class="footer-top">
 <footer id="footer" class="fadeUpTrigger">
-    <div class="footer-area">
-        <dl class="footer-links">
-            <dt>
-                <a href="index.html"><img class="site-logo" src="img/logo/logo_black_rect.png" alt="サイトロゴ"></a>
-            </dt>
-            <dd>〒153-0043<br>東京都目黒区東山x-x-x</dd>
-            <dd>営業時間 : 11:00-20:00 （月曜休）</dd>
-        </dl>
-        <ul class="footer-links">
-            <li><a href="#">花束・ブーケ</a></li>
-            <li><a href="#">アレンジメント</a></li>
-            <li><a href="#">プリザーブドフラワー</a></li>
-            <li><a href="#">季節限定</a></li>
-        </ul>
-        <ul class="footer-links">
-            <li><a href="#">お支払い方法について</a></li>
-            <li><a href="#">利用規約</a></li>
-            <li><a href="#">プライバシーポリシー</a></li>
-            <li><a href="#">特定商取引法に基づく表示</a></li>
-        </ul>
-        <ul class="contact-btn footer-links">
-            <li>
-                <a class="phone-icon" href="tel:03-xxxx-xxxx"><img class="contact-icon" src="img/phone_white.svg" alt="電話アイコン">03-xxxx-xxxx</a>
-            </li>
-            <li>
-                <a class="contact-mail" href="contact.html"><img class="contact-icon" src="img/email_white.svg" alt="メールアイコン">メールでのお問い合わせ</a>
-            </li>
-        </ul>
-        </div>
-        <small>Copyright &copy; osumou flowers Allright Reverved</small>
-    </footer>
-    <!-- /footer -->
+  <div class="footer-area">
+    <dl class="footer-links">
+      <dt>
+        <a href="index.html"><img class="site-logo" src="img/logo/logo_black_rect.png" alt="サイトロゴ"></a>
+      </dt>
+      <dd>〒153-0043<br>東京都目黒区東山x-x-x</dd>
+      <dd>営業時間 : 11:00-20:00 （月曜休）</dd>
+    </dl>
+    <ul class="footer-links">
+      <li><a href="#">花束・ブーケ</a></li>
+      <li><a href="#">アレンジメント</a></li>
+      <li><a href="#">プリザーブドフラワー</a></li>
+      <li><a href="#">季節限定</a></li>
+    </ul>
+    <ul class="footer-links">
+      <li><a href="#">お支払い方法について</a></li>
+      <li><a href="#">利用規約</a></li>
+      <li><a href="#">プライバシーポリシー</a></li>
+      <li><a href="#">特定商取引法に基づく表示</a></li>
+    </ul>
+    <ul class="contact-btn footer-links">
+      <li>
+        <a class="phone-icon" href="tel:03-xxxx-xxxx"><img class="contact-icon" src="img/phone_white.svg" alt="電話アイコン">03-xxxx-xxxx</a>
+      </li>
+      <li>
+        <a class="contact-mail" href="contact.html"><img class="contact-icon" src="img/email_white.svg" alt="メールアイコン">メールでのお問い合わせ</a>
+      </li>
+    </ul>
+  </div>
+  <small>Copyright &copy; osumou flowers Allright Reverved</small>
+</footer><!-- /footer -->
 
-    <div id="page-top"><a href="#header">Page<br>Top</a></div>
+<div id="page-top"><a href="#header">Page<br>Top</a></div>
 
 <!--=============JS ===============--> 
 <!--jQuery-->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<!--機能編 5-1-10 スクロールすると位置が固定して追従-->
+<!--スクロールすると位置が固定して追従-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.1.0/stickyfill.min.js"></script>
-<!--機能編 6-2-4　サムネイルをクリックすると、メイン画像が切り替わる1-->
+<!--Slick_画像をクリックで、メイン画像が切り替わる-->
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<!--機能編 9-3-1 ツールチップ-->
+<!--Cookie-->
 <script src="https://unpkg.com/popper.js@1"></script>
 <script src="https://unpkg.com/tippy.js@5"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
-<!--Local JS-->
+<!-- JS -->
 <script src="js/script.js"></script>
 </body>
 </html>

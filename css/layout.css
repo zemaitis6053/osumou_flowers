@@ -56,7 +56,27 @@ section{
     margin: 140px auto 40px auto!important;
 }
 
-@media screen and (max-width:768px){
+header{
+    position: fixed;
+    z-index: 900;
+    background-color: #fafafa;
+    opacity: .97;
+    width: 100%; 
+    height: 107px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1200px){
+    header{
+        height: 191px;
+    }
+    
+}
+
+@media screen and (max-width:850px){
+    header{
+        height: 0;
+    }
     #header h1{
         max-width:120px;
         padding: 40px 0 0 0;
@@ -70,21 +90,14 @@ section{
     }
 }
 
-header{
-    position: fixed;
-    z-index: 900;
-    background-color: #fafafa;
-    opacity: .97;
-    width: 100%; 
-    margin: 0 auto;
-}
 
-/* nav */
-
+/*===============*/
+/* nav 
+/*===============*/
 #g-nav{
     animation-delay: .3s;
     position: relative;
-    z-index: 4;/*hoverした際に出るパネルをsliderよりも前面に出す*/
+    z-index: 4;
 }
 
 #g-nav ul li a:hover{
@@ -113,7 +126,7 @@ img.site-logo{
 img.site-logo:hover,
 img.site-logo-tablet:hover{
     transition-duration: .3s;
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: .8;
 }
 
@@ -137,7 +150,7 @@ img.site-logo-tablet{
 }
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:850px){
     #g-nav ul li a::after{
         content:"";
         padding: 0;
@@ -163,8 +176,9 @@ img.site-logo-tablet{
     }
 }
 
-/* heading */
-
+/*===============*/
+/* heading 
+/*===============*/
 #slider h2,
 #gallery h2,
 #newitems h2,
@@ -183,12 +197,23 @@ img.site-logo-tablet{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    top: 108px;
     width: 100%;
     height: 100vh;
     opacity: .8;
 }
+@media screen and (max-width:1200px){
+    .kv-wrapper{
+        top: 190px;
+    }
+}
+@media screen and (max-width:850px){
+    .kv-wrapper{
+        top: 0;
+    }
+}
 
-@media screen and (max-width:768px){
+@media screen and (max-width:850px){
     #slider h2,
     #gallery h2,
     #newitems h2,
@@ -204,7 +229,6 @@ img.site-logo-tablet{
     margin-bottom: 30px;
 }
 
-
 @media screen and (max-width:550px){
     .modaal-container h2,
     #gallery h2,
@@ -213,12 +237,12 @@ img.site-logo-tablet{
     }
 }
 
-/* Gallery */
-
-/*画像の横幅を100%にしてレスポンシブ化*/
+/*================*/
+/* Gallery 
+/* ============== */
 #gallery img{
 	width: 100%;
-	vertical-align: bottom;/*画像の下にできる余白を削除*/
+	vertical-align: bottom;
 }
 
 .gallery-list{
@@ -261,7 +285,9 @@ img.site-logo-tablet{
     color: #9EA088;
 }
 
-/* About */
+/*================*/
+/* About
+/* ============== */
 .about-wrapper{
     display: flex;
     align-items: center;
@@ -375,14 +401,15 @@ span.border-line{
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:850px){
     .about-text-wrapper{
         width: 100%;
     }
 }
 
-/* Access */
-
+/*================*/
+/* Access
+/*================*/
 #access dl{
     max-width: 290px;
     margin: 0 auto 40px auto;
@@ -399,8 +426,9 @@ span.border-line{
     margin-bottom: 140px;
 }
 
-/* newitems */
-
+/*================*/
+/* newitems
+/*================*/
 #newitems{
     margin: 0 0 50px 0;
 }
@@ -417,8 +445,9 @@ span.detail-price{
     padding: 2px 10px;
 }
 
-/* footer */
-
+/*================*/
+/* footer
+/*================*/
 hr.footer-top{
     color: #999;
     width: 100%;
@@ -494,8 +523,9 @@ small{
     }  
 }
 
-/* お問い合わせボタン */
-
+/*=========================*/
+/* お問い合わせボタン
+/*=========================*/
 .contact-btn li,
 .contact-btn dd{
     max-width: 300px;
@@ -549,10 +579,12 @@ img.contact-icon{
     #footer{
     padding: 30px 30px 0 30px;   
     }
+
     .footer-area ul{
         width:47%;
         margin: 0 0 50px 0;
     }
+
     .footer-area dl{
         border:none;
         width:47%;
@@ -561,15 +593,15 @@ img.contact-icon{
         text-align: left;
         line-height: 2;
     }
-
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 850px){
     .contact-btn dd{
         display: inline;
         max-width: 300px;
         margin: 0 auto 40px auto;
     }
+
     .phone-icon{
         border: 1px #fff;
     }
@@ -583,6 +615,7 @@ img.contact-icon{
     #footer{
     padding: 30px 30px 0 30px;   
     }
+
     .footer-area ul,
     .footer-area dl{
         border-top: 1px solid #457703;
@@ -591,6 +624,7 @@ img.contact-icon{
         padding:30px 30px;
         line-height: 2.5;
     }
+
     .footer-area dl{
         border-top: none;
         padding-top: 0;
