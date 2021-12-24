@@ -122,13 +122,13 @@ img.site-logo{
     transition-duration: .3s;
 }
 
-
+/* 
 img.site-logo:hover,
 img.site-logo-tablet:hover{
     transition-duration: .3s;
     transform: scale(1.1);
     opacity: .8;
-}
+} */
 
 footer img.site-logo{
     padding: 0;
