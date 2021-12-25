@@ -119,6 +119,11 @@ select:hover{
   display: none;
 }
 
+p.precautions{
+  font-size:1.4rem;
+  margin-bottom: 10px;
+}
+
 @media screen and (max-width: 867px){
   main{
     max-width: 90%;
