@@ -52,7 +52,7 @@ a.caution:hover{
 
 @media screen and (max-width:1020px){
     .sub-fix-block{
-        position:relative;/*stickyからrelativeに戻す*/	
+        position:relative;/*stickyからrelativeに戻す*/
         top:0;
     }
 }
