@@ -282,7 +282,7 @@ ul.nav-text-wrapper{
     }
         
     #g-nav ul li li a{
-            padding: 0;
+        padding: 0;
     }
         
     /*矢印の位置と向き*/
@@ -459,7 +459,7 @@ ul.nav-text-wrapper{
 }
 
 /*==================================*/
-/* 押し込まれる（円が縮小） 
+/* Close_ボタン（円が縮小） 
 /*===================================*/
 .pushcircle{
 	position: relative;
@@ -795,36 +795,6 @@ ul.nav-text-wrapper{
     .slick-next{
         top: 25%;
     }
-}
-
-@media screen and (max-width:350px){
-    .choice-btn li{
-        width:48%!important;
-        margin:0 1% 10px 1%;
-    }
-    }
-
-/*選択するサムネイル画像の設定*/
-.choice-btn li{
-	cursor: pointer;
-	outline: none;
-	width:23%!important;
-    margin: 0 1%;
-}
-
-@media screen and (max-width:350px){
-.choice-btn li{
-    width:48%!important;
-    margin:0 1% 10px 1%;
-}
-}
-
-.choice-btn li img{
-    opacity: 0.6;
-}
-
-.choice-btn li.slick-current img{
-    opacity: 1;
 }
 
 /*======================*/

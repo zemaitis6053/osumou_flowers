@@ -520,7 +520,7 @@ small{
 /*=========================*/
 .contact-btn li,
 .contact-btn dd{
-    max-width: 300px;
+    width: 300px;
     height: 60px;
     color: #fff;
     background-color: #A0888A;
@@ -539,7 +539,7 @@ small{
     white-space: nowrap;
     position: relative;
     color: #fff!important;
-    padding: 20px 50px;
+    padding: 20px 45px;
     letter-spacing: .1em;
 }
 
@@ -567,9 +567,23 @@ img.contact-icon{
     color: #fff!important;
 }
 
+
+@media screen and (max-width:375px){
+    .contact-btn li,
+    .contact-btn dd{
+        width: 100%;
+        margin: 20px auto;
+    }
+}
+
+.contact-btn a{
+    padding: 2rem 2rem;
+}
+
+/* レスポンシブ */
 @media screen and (max-width:810px) {
     #footer{
-    padding: 30px 30px 0 30px;   
+        padding: 30px 30px 0 30px;   
     }
 
     .footer-area ul{
